@@ -1,0 +1,81 @@
+[1] What is a program :
+===> Program is a set of instructions given to a computer to perform a specific task.
+
+[2]Write a simple "Hello World " program in two different programming languages of your choice .compare the structure and syntax.
+===>[i] C Language:
+      #include <stdio.h>
+
+     int main() {
+     printf("Hello, World!");
+     return 0;
+}
+O/P: Hello, World!
+
+[ii] Python:
+print("Hello, World!")
+
+
+O/P:Hello, World!
+
+
+* Comparistion of structure and syntax:
+   
+Feature             C Language               Python Language
+
+
+
+Complexity          More complex              very simple
+Syntax              Requires header            No header
+                    files(#include)
+main function       Must have main()           Not required
+Printing            printf() function          print()function
+semicolon           Required(;)                not required
+code length         Longer                     shorter
+
+[3]Explain in your own worlds what a program is and how it functions:
+===>Program is a set of instruction for the computer to perform a task.
+
+How a program functions:
+ 1. input: the program takes input(data) from user or system
+ 2. Processing: the cpu process the instructions step by step
+ 3. output:the result is shown to the user
+
+
+[4] what is programming:
+===> programming is the process of writing instructions that tell a computer what to do.
+
+[5] What are the key steps involved in the programming process?
+===>
+     1. Understand the Problem 
+
+First, clearly understand what you need to do
+ Know:
+
+What is the input?
+
+What output is required?
+
+2. Plan the Solution (Algorithm) 
+
+Think step-by-step how to solve the problem
+Write simple steps in order
+
+3.Write the Program (Coding) 
+
+ Convert your steps into a programming language (C, Python, etc.)
+
+4. Run the Program 
+
+Execute the program to see if it works
+
+5. Test and Debug 
+
+Check for errors (bugs)
+Fix mistakes until correct output comes
+
+6. Maintain and Improve 
+
+Update the program if needed
+Improve performance or add features
+
+                                          
