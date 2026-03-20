@@ -18,7 +18,7 @@ print("Hello, World!")
 O/P:Hello, World!
 
 
-* Comparistion of structure and syntax:
+* Comparison of structure and syntax:
    
 Feature             C Language               Python Language
 
@@ -33,7 +33,7 @@ semicolon           Required(;)                not required
 code length         Longer                     shorter
 
 [3]Explain in your own worlds what a program is and how it functions:
-===>Program is a set of instruction for the computer to perform a task.
+===>Program is a set of instructions for the computer to perform a task.
 
 How a program functions:
  1. input: the program takes input(data) from user or system
@@ -78,4 +78,170 @@ Fix mistakes until correct output comes
 Update the program if needed
 Improve performance or add features
 
-                                          
+[6]Types of Programming Languages.
+===> Low-Level Languages
+ These are close to the computer hardware and are difficult to understand.
+
+Machine Language
+ Uses binary numbers (0 and 1)
+ Directly understood by the computer
+Assembly Language
+ Uses symbols (like ADD, SUB)
+ Needs an assembler to convert into machine code
+2.High-Level Languages
+ These are easy to read, write, and understand.
+
+Examples: C, C++, Java, Python
+ Closer to human language
+ Needs a compiler or interpreter
+3.Middle-Level Languages
+ These combine features of both low-level and high-level languages.
+
+Example: C
+ Can work with both hardware and software
+4.Object-Oriented Languages
+ Based on objects and classes.
+
+Examples: C++, Java, Python
+ Used for large and complex programs
+5.Scripting Languages
+ Used for automation and web development.
+
+Examples: JavaScript, Python, PHP
+ Usually interpreted, not compiled
+[7] What are the main differences between high-level and low-level
+programming languages?
+===>Ease of Understanding
+ High-Level Languages: Easy to read and understand (similar to human language)
+ Low-Level Languages: Difficult to understand (machine-oriented)
+
+Abstraction
+ High-Level Languages: Provide high abstraction from hardware
+ Low-Level Languages: Provide little or no abstraction
+
+Speed
+ High-Level Languages: Slower in execution
+ Low-Level Languages: Faster in execution
+
+Portability
+ High-Level Languages: Portable (can run on different systems)
+ Low-Level Languages: Machine dependent (not portable)
+
+Programming Effort
+ High-Level Languages: Requires less effort and fewer lines of code
+ Low-Level Languages: Requires more effort and detailed coding
+
+Examples
+ High-Level Languages: C, C++, Java, Python
+Low-Level Languages: Machine language, Assembly language
+
+  [8] World Wide Web & How Internet Works  
+      ===>The World Wide Web (WWW) is a collection of websites available on the Internet that people can access using web browsers.
+  It was invented by Tim Berners-Lee
+  It works using web browsers like:
+
+●Google Chrome
+
+●Mozilla Firefox
+ How the internet works :The internet is a network that connects computers and devices all over the world so they can share information.
+How the internet works in simple steps:
+1.You type a website name in a browser.
+
+2.The internet finds the website’s server.
+
+3.Your request is sent to that server.
+
+4.The server sends the data back.
+
+5.The browser shows the website on your screen.
+
+Short flow:
+ You → Internet → Server → Internet → You
+
+ [9]     Research and create a diagram of how data is transmitted from a client to a server
+over the internet.
+===>[ Client (Your Computer) ]
+            |
+            | 1. Request (HTTP)
+            v
+        [ DNS Server ]
+            |
+            | 2. IP Address Found
+            v
+        [ Internet / Network ]
+     (routers, cables, etc.)
+            |
+            | 3. Data travels as packets
+            v
+        [ Web Server ]
+            |
+            | 4. Process request
+            v
+        [ Internet / Network ]
+            |
+            | 5. Response (data)
+            v
+[ Client (Browser Displays Page) ]
+
+
+●   Explanation
+●The client (your computer) sends a request (like opening a website).
+
+●DNS finds the IP address of the server.
+
+●The request travels through the Internet as small packets.
+
+●The server receives the request and processes it.
+
+●The server sends back the response (webpage, data).
+
+●The client receives and displays the result.
+
+[10] Describe the roles of the client and server in web communication.
+===> Client
+●The client is the device or program that requests information from a server.
+
+●Usually, this is your computer, phone, or browser.
+
+●It sends requests for web pages, files, or other data.
+
+●Example: When you type www.google.com, your browser (client) asks Google’s server for the homepage.
+
+
+Server
+●The server is a powerful computer that stores and provides data to clients.
+
+●It responds to client requests by sending the requested information.
+
+●Example: Google’s server sends back the homepage when your browser requests it.
+
+
+Simple Flow
+Client → Request → Server → Response → Client
+[11]Network Layers on Client and Server.
+
+===>Both client and server use the same layered structure called the network layers to communicate over the Internet. These layers follow a model like TCP/IP or OSI.
+1. Application Layer
+●The top layer where programs like web browsers or email clients work.
+
+●Example: A browser (client) requests a webpage, a web server provides it.
+
+2. Transport Layer
+●Ensures data is sent reliably between client and server.
+
+●Divides data into packets and manages error checking.
+
+●Protocols: TCP, UDP
+
+3. Network Layer
+●Handles addressing and routing of packets.
+
+●Uses IP addresses to deliver packets to the correct server.
+
+4. Data Link Layer
+●Responsible for sending data over physical networks (like Ethernet, Wi-Fi).
+
+●Packages data into frames for the hardware.
+
+5. Physical Layer
+●Actual hardware transmission of data over cables, wireless signals, or fiber optics
