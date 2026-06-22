@@ -1,0 +1,123 @@
+1.Create a Flipkart-style product card in HTML and CSS, then use a meta viewport tag to ensure it scales correctly on mobile devices.
+==><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        body {
+            background: #f1f3f6;
+            font-family: Arial, sans-serif;
+        }
+
+        .product-card {
+            display: flex;
+            width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .product-card img {
+            width: 250px;
+            margin-right: 20px;
+        }
+
+        .details h2 {
+            margin: 0;
+        }
+
+        .price {
+            font-size: 24px;
+            color: green;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2874f0;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="product-card">
+    <img src="https://via.placeholder.com/250" alt="Product">
+    <div class="details">
+        <h2>Wireless Headphones</h2>
+        <p class="price">₹1,999</p>
+        <p>High-quality Bluetooth headphones with long battery life.</p>
+        <button>Add to Cart</button>
+    </div>
+</div>
+
+</body>
+</html>
+
+2.Add media queries to your product card so that when the screen width is 600px or less, the card layout switches from horizontal (image and details side by side) to vertical (image on top, details below).
+==>@media only screen and (max-width: 600px) {
+    .product-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-card img {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+Task 3: Set up breakpoints at 1200px, 900px, and 600px
+==>/* 1200px */
+@media only screen and (max-width: 1200px) {
+    .product-card {
+        padding: 18px;
+    }
+
+    .details {
+        font-size: 18px;
+    }
+}
+
+/* 900px */
+@media only screen and (max-width: 900px) {
+    .product-card {
+        padding: 15px;
+    }
+
+    .details {
+        font-size: 16px;
+    }
+}
+
+/* 600px */
+@media only screen and (max-width: 600px) {
+    .product-card {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+}
+Task 4: Short note for testing with screenshots
+==>When testing the responsive design by resizing the browser, include screenshots and a note like this:
+
+Desktop View (width greater than 900px):
+The product card is displayed horizontally with the image on the left and product details on the right. It uses larger fonts and more padding.
+Tablet View (between 601px and 900px):
+The layout remains horizontal, but the font size and padding are reduced to fit medium-sized screens more comfortably.
+Mobile View (600px or below):
+The layout changes to vertical with the image on top and the details below. Font sizes and padding are reduced, making the card easier to read and use on small screens.
